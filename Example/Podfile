@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VitalSignsHandler_Example' do
+  pod 'VitalSignsHandler', :path => '../'
+
+  target 'VitalSignsHandler_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

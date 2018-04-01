@@ -1,0 +1,22 @@
+{
+  "name": "VitalSignsHandler",
+  "version": "0.1.0",
+  "summary": "A short description of VitalSignsHandler.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Мария Тимофеева/VitalSignsHandler",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Мария Тимофеева": "maria@mircod.com"
+  },
+  "source": {
+    "git": "https://github.com/Мария Тимофеева/VitalSignsHandler.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VitalSignsHandler/Classes/**/*"
+}

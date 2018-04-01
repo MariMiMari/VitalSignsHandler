@@ -1,0 +1,6 @@
+framework module VitalSignsHandler {
+  umbrella header "VitalSignsHandler-umbrella.h"
+
+  export *
+  module * { export * }
+}

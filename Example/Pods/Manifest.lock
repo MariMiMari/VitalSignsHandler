@@ -1,0 +1,23 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - VitalSignsHandler (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - VitalSignsHandler (from `../`)
+
+EXTERNAL SOURCES:
+  VitalSignsHandler:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  VitalSignsHandler: d0f73b097cc9c2b1117ad4d61673589058d6361f
+
+PODFILE CHECKSUM: c55ce3cea1b79c6117287eafd12d9dcf463e8d76
+
+COCOAPODS: 1.3.1

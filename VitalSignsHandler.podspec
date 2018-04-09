@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VitalSignsHandler'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of VitalSignsHandler.'
 
 # This description is used to generate tags and improve search results.
@@ -24,17 +24,24 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/MariMiMari/VitalSignsHandler'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Мария Тимофеева' => 'maria@mircod.com' }
+  s.author           = { 'Мария Тимофеева' => 'mi.maritim@gmail.com' }
   s.source           = { :git => 'https://github.com/MariMiMari/VitalSignsHandler.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
+  s.libraries =  'c++'
   s.source_files = 'VitalSignsHandler/Classes/**/**'
-  
+  # s.vendored_frameworks = 'VitalSignsHandler/VitalSignsHandler.framework' 
   # s.resource_bundles = {
   #   'VitalSignsHandler' => ['VitalSignsHandler/Assets/*.png']
   # }
+  s.requires_arc = true
+  s.xcconfig = {
+     'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+     'CLANG_CXX_LIBRARY' => 'libc++' ,
+     'SWIFT_VERSION' => '4.0'
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

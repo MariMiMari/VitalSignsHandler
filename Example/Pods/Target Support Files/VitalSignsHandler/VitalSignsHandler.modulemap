@@ -1,6 +1,13 @@
 framework module VitalSignsHandler {
   umbrella header "VitalSignsHandler-umbrella.h"
-
+  header "VitalSignsHandler.h"
   export *
-  module * { export * }
+  module Bridge [system][extern_c]{
+      
+      exclude header "BridgeClass.h"
+      exclude header "PPG.hpp"
+      exclude header "Patch.hpp"
+      exclude header "ECG.hpp"
+      exclude header "stats.h"
+  }
 }

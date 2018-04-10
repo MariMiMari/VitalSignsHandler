@@ -9,7 +9,14 @@
 #endif
 #endif
 #endif
-#import "VitalSignsHandler.h"
+//
+//#import "BridgeClass.h"
+//#import "ECG.hpp"
+//#import "Patch.hpp"
+//#import "PPG.hpp"
+//#import "stats.h"
+//#import "VitalSignsHandler.h"
+
 FOUNDATION_EXPORT double VitalSignsHandlerVersionNumber;
 FOUNDATION_EXPORT const unsigned char VitalSignsHandlerVersionString[];
 

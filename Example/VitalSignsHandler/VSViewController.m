@@ -8,13 +8,15 @@
 
 #import "VSViewController.h"
 #import "VSECGGenerator.h"
-#import <VitalSignsHandler/VitalSignsHandler-umbrella.h>
+
+@import VitalSignsHandler;
 @interface VSViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *ecg;
 @property (weak, nonatomic) IBOutlet UILabel *ecgHR;
 @property (weak, nonatomic) IBOutlet UILabel *ecgHRV;
 @property (weak, nonatomic) IBOutlet UILabel *ecgRR;
 
+    
 @property (strong, nonatomic) VitalSignsHandler *handler;
 @property (strong, nonatomic) VSECGGenerator *generator;
 @end

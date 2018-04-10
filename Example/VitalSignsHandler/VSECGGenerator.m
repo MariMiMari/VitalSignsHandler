@@ -27,7 +27,7 @@
 
 -(void)start{
     if (!self.timer){
-        self.timer =[NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer *timer) {
+        self.timer =[NSTimer scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer *timer) {
             [self sendNewValue];
         }];
         [[NSRunLoop mainRunLoop] addTimer: self.timer forMode:NSRunLoopCommonModes];
